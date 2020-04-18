@@ -15,7 +15,7 @@ const width = parseInt(sliderWidth.width);
 const getCovidGh = async country => {
     try {
         // const fetchCovid19SA = await fetch(`https://covid19.mathdro.id/api/countries/${country}`) - Old API
-        const fetchCovid19Gh = await fetch(`https://corona.lmao.ninja/countries/${country}`);
+        const fetchCovid19Gh = await fetch(`https://corona.lmao.ninja/v2/countries/${country}`);
         const data = await fetchCovid19Gh.json();
 
         spinner.forEach(el => {
